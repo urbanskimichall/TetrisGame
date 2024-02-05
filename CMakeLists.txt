@@ -3,4 +3,11 @@ project(tetris)
 
 set(CMAKE_CXX_STANDARD 17)
 
+include(cmake/UpdateSubmodules.cmake)
+include(CTest)
+
+add_subdirectory(external)
+add_subdirectory(tests)
+
+
 add_executable(tetris main.cpp)

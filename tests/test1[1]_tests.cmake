@@ -1,0 +1,5 @@
+add_test( TestTopic.TrivialEquality /home/urbanskimichal/tetris/tests/test1 [==[--gtest_filter=TestTopic.TrivialEquality]==] --gtest_also_run_disabled_tests)
+set_tests_properties( TestTopic.TrivialEquality PROPERTIES WORKING_DIRECTORY /home/urbanskimichal/tetris/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( TestTopic.MoreEquality /home/urbanskimichal/tetris/tests/test1 [==[--gtest_filter=TestTopic.MoreEquality]==] --gtest_also_run_disabled_tests)
+set_tests_properties( TestTopic.MoreEquality PROPERTIES WORKING_DIRECTORY /home/urbanskimichal/tetris/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( test1_TESTS TestTopic.TrivialEquality TestTopic.MoreEquality)
