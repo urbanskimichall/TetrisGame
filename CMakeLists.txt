@@ -9,7 +9,7 @@ include(CTest)
 add_subdirectory(external)
 add_subdirectory(tests)
 
-add_executable(tetris main.cpp)
+add_executable(tetris main.cpp BlockControler.cpp BlockControler.h BigSquare.cpp BigSquare.h)
 
 target_include_directories(${PROJECT_NAME} PUBLIC external/SFML/include)
 target_link_libraries(${PROJECT_NAME} PRIVATE sfml-audio
